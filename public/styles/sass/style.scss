@@ -1,0 +1,369 @@
+/* Media Queries */
+@use "mixins";
+
+/* Variables (Fonts and Colors) */
+@use "variables";
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Google Fonts (Font: Jersey + JetBrains Mono) */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Custom Classes */
+.tooltip-custom {
+    --bs-tooltip-bg: rgba(17, 24, 39, 0.9);
+    --bs-tooltip-color: #ffffff;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Animations */
+@keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020617;
+    background-image:
+        linear-gradient(rgba(0, 255, 153, 0.20) 0.6px, transparent 0.6px),
+        linear-gradient(90deg, rgba(0, 255, 153, 0.20) 0.6px, transparent 0.6px);
+    background-size: 50px 50px;
+    background-attachment: fixed;
+    animation: bg-scrolling-reverse 1.5s linear infinite;
+
+    .container {
+        background: variables.$custom-black;
+
+        header {
+            nav {
+                background: variables.$custom-blue;
+
+                h1 {
+                    color: variables.$standard-white;
+                    font-family: variables.$font-family-primary;
+                    font-size: 3rem;
+                    line-height: 1;
+
+                    .initials {
+                        color: variables.$custom-green;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+
+                    a {
+                        background: variables.$standard-white;
+                        color: variables.$custom-black;
+                        text-decoration: none;
+                        width: 40px;
+                        height: 40px;
+                        transition: all 0.3s ease;
+
+                        @include mixins.mobile-md {
+                            width: 35px;
+                            height: 35px;
+                        }
+
+                        @include mixins.mobile-sm {
+                            width: 35px;
+                            height: 35px;
+                        }
+
+                        &:hover {
+                            transform: scale(1.15);
+                            background: variables.$custom-green;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .about {
+                background: variables.$custom-blue;
+                color: variables.$standard-white;
+
+                h2 {
+                    font-family: variables.$font-family-primary;
+                    font-size: 3.5rem;
+
+                    @include mixins.mobile-md {
+                        font-size: 3rem;
+                    }
+
+                    @include mixins.mobile-sm {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                p {
+                    font-family: variables.$font-family-secondary;
+                    text-align: justify;
+                    text-justify: inter-word;
+
+                    @include mixins.mobile-md {
+                        font-size: 1rem;
+                        text-align: left;
+                        max-width: 90%;
+                    }
+
+                    @include mixins.mobile-sm {
+                        font-size: 0.9rem;
+                        text-align: left;
+                        word-break: break-word;
+                        hyphens: auto;
+                        -webkit-hyphens: auto;
+                        -ms-hyphens: auto;
+                    }
+                }
+
+                .search-element {
+                    color: variables.$custom-green;
+                    font-family: variables.$font-family-secondary;
+                    border: 2px solid variables.$custom-green;
+                }
+            }
+
+            .skills {
+                h3 {
+                    color: variables.$standard-white;
+                    font-family: variables.$font-family-primary;
+                    font-size: 3rem;
+
+                    @include mixins.mobile-md {
+                        font-size: 2.5rem;
+                    }
+
+                    @include mixins.mobile-sm {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .icons {
+                    img {
+                        background: variables.$custom-blue;
+                        padding: 5px;
+                        width: 65px;
+
+
+                        @include mixins.mobile-md {
+                            width: 50px;
+                        }
+
+                        @include mixins.mobile-sm {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+
+            .education {
+                background: variables.$custom-blue;
+                color: variables.$standard-white;
+
+                h3 {
+                    font-family: variables.$font-family-primary;
+                    font-size: 3rem;
+
+                    @include mixins.mobile-md {
+                        font-size: 2.5rem;
+                    }
+
+                    @include mixins.mobile-sm {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .card {
+                    background: variables.$custom-blue;
+                    color: variables.$standard-white;
+                    font-family: variables.$font-family-secondary;
+                    width: 25rem;
+                    box-shadow: variables.$custom-shadow;
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+
+                    .progress {
+                        .progress-bar {
+                            background-color: variables.$custom-green;
+                            color: variables.$custom-black;
+                        }
+                    }
+                }
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    color: variables.$custom-green;
+                    opacity: 0.5;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background-color: variables.$custom-green;
+                    opacity: 1;
+                }
+            }
+
+            .projects {
+                background: variables.$custom-blue;
+
+                .window {
+                    .window-header {
+                        background-color: #2b2b2b;
+                        color: variables.$standard-white;
+
+                        .btn-window-custom {
+                            border-radius: 0;
+                            background-color: transparent;
+
+                            i {
+                                color: variables.$standard-white;
+                            }
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0.1);
+                            }
+                        }
+
+                        .btn-close-custom {
+                            border-top-right-radius: 0.5rem;
+                            border-top-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                            border-bottom-left-radius: 0;
+                            background-color: transparent;
+
+                            i {
+                                color: variables.$standard-white;
+                            }
+
+                            &:hover {
+                                background-color: #e81123;
+                            }
+                        }
+
+                        .window-title {
+                            background: variables.$custom-black;
+
+                            p {
+                                font-family: variables.$font-family-primary;
+                            }
+                        }
+                    }
+
+                    .window-body {
+                        background: variables.$custom-black;
+                        color: variables.$standard-white;
+                        font-family: variables.$font-family-secondary;
+                        font-size: 0.8rem;
+
+                        .project {
+                            &:nth-child(1) {
+                                transition-delay: 0.2s;
+                            }
+
+                            &:nth-child(3) {
+                                transition-delay: 0.4s;
+                            }
+
+                            &:nth-child(5) {
+                                transition-delay: 0.6s;
+                            }
+
+                            .project-title,
+                            a {
+                                color: variables.$custom-green;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hire {   
+                color: variables.$standard-white;
+                font-family: variables.$font-family-secondary;
+
+                h3 {
+                    font-family: variables.$font-family-primary;
+                    font-size: 3rem;
+
+                    @include mixins.mobile-md {
+                        font-size: 2.5rem;
+                    }
+
+                    @include mixins.mobile-sm {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                a {
+                    background: variables.$custom-blue;
+                    color: variables.$standard-white;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+
+                    i {
+                        color: variables.$custom-green;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                        background: variables.$custom-green;
+                        color: variables.$custom-black;
+                        
+                        i {
+                            color: variables.$custom-black;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            background: variables.$custom-blue;
+            color: variables.$standard-white;
+            font-family: variables.$font-family-secondary;
+
+            p {
+                font-size: 0.9rem;
+
+                @include mixins.mobile-md {
+                    font-size: 0.8rem;
+                }
+
+                @include mixins.mobile-sm {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
