@@ -112,7 +112,7 @@ body {
                 background: variables.$custom-blue;
                 color: variables.$standard-white;
 
-                h2 {
+                h3 {
                     font-family: variables.$font-family-primary;
                     font-size: 3.5rem;
 
@@ -191,6 +191,7 @@ body {
                 color: variables.$standard-white;
 
                 h3 {
+                    color: variables.$standard-white;
                     font-family: variables.$font-family-primary;
                     font-size: 3rem;
 
@@ -202,6 +203,7 @@ body {
                         font-size: 2.5rem;
                     }
                 }
+
 
                 .card {
                     background: variables.$custom-blue;
@@ -234,8 +236,63 @@ body {
                 }
             }
 
+            .hire {
+                color: variables.$standard-white;
+                font-family: variables.$font-family-secondary;
+
+                h3 {
+                    color: variables.$standard-white;
+                    font-family: variables.$font-family-primary;
+                    font-size: 3rem;
+
+                    @include mixins.mobile-md {
+                        font-size: 2.5rem;
+                    }
+
+                    @include mixins.mobile-sm {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                a {
+                    background: variables.$standard-white;
+                    color: variables.$custom-black;
+                    font-family: variables.$font-family-secondary;
+                    width: 300px;
+                    padding: 0.5rem 1rem;
+                    padding-left: 3rem;
+                    transition: 0.2s ease-in-out;
+
+                    i {
+                        top: 50%;
+                        left: 1rem;
+                        transform: translateY(-50%);
+                    }
+
+                    &:hover,
+                    &:active {
+                        background-color: variables.$custom-green;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
             .projects {
                 background: variables.$custom-blue;
+
+                h3 {
+                    color: variables.$standard-white;
+                    font-family: variables.$font-family-primary;
+                    font-size: 3rem;
+
+                    @include mixins.mobile-md {
+                        font-size: 2.5rem;
+                    }
+
+                    @include mixins.mobile-sm {
+                        font-size: 2.5rem;
+                    }
+                }
 
                 .window {
                     .window-header {
@@ -303,45 +360,6 @@ body {
                             a {
                                 color: variables.$custom-green;
                             }
-                        }
-                    }
-                }
-            }
-
-            .hire {   
-                color: variables.$standard-white;
-                font-family: variables.$font-family-secondary;
-
-                h3 {
-                    font-family: variables.$font-family-primary;
-                    font-size: 3rem;
-
-                    @include mixins.mobile-md {
-                        font-size: 2.5rem;
-                    }
-
-                    @include mixins.mobile-sm {
-                        font-size: 2.5rem;
-                    }
-                }
-
-                a {
-                    background: variables.$custom-blue;
-                    color: variables.$standard-white;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-
-                    i {
-                        color: variables.$custom-green;
-                    }
-
-                    &:hover {
-                        transform: scale(1.05);
-                        background: variables.$custom-green;
-                        color: variables.$custom-black;
-                        
-                        i {
-                            color: variables.$custom-black;
                         }
                     }
                 }

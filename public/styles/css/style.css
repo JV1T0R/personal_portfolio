@@ -98,17 +98,17 @@ body .container main .about {
   background: #111827;
   color: #ffffff;
 }
-body .container main .about h2 {
+body .container main .about h3 {
   font-family: "Jersey 10", sans-serif;
   font-size: 3.5rem;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  body .container main .about h2 {
+  body .container main .about h3 {
     font-size: 3rem;
   }
 }
 @media (max-width: 374px) {
-  body .container main .about h2 {
+  body .container main .about h3 {
     font-size: 2.5rem;
   }
 }
@@ -174,6 +174,7 @@ body .container main .education {
   color: #ffffff;
 }
 body .container main .education h3 {
+  color: #ffffff;
   font-family: "Jersey 10", sans-serif;
   font-size: 3rem;
 }
@@ -210,8 +211,60 @@ body .container main .education .swiper-pagination-bullet-active {
   background-color: #00ff99;
   opacity: 1;
 }
+body .container main .hire {
+  color: #ffffff;
+  font-family: "JetBrains Mono", monospace;
+}
+body .container main .hire h3 {
+  color: #ffffff;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 3rem;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  body .container main .hire h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 374px) {
+  body .container main .hire h3 {
+    font-size: 2.5rem;
+  }
+}
+body .container main .hire a {
+  background: #ffffff;
+  color: #0C0C0C;
+  font-family: "JetBrains Mono", monospace;
+  width: 300px;
+  padding: 0.5rem 1rem;
+  padding-left: 3rem;
+  transition: 0.2s ease-in-out;
+}
+body .container main .hire a i {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+body .container main .hire a:hover, body .container main .hire a:active {
+  background-color: #00ff99;
+  transform: scale(1.05);
+}
 body .container main .projects {
   background: #111827;
+}
+body .container main .projects h3 {
+  color: #ffffff;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 3rem;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  body .container main .projects h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 374px) {
+  body .container main .projects h3 {
+    font-size: 2.5rem;
+  }
 }
 body .container main .projects .window .window-header {
   background-color: #2b2b2b;
@@ -264,41 +317,6 @@ body .container main .projects .window .window-body .project:nth-child(5) {
 body .container main .projects .window .window-body .project .project-title,
 body .container main .projects .window .window-body .project a {
   color: #00ff99;
-}
-body .container main .hire {
-  color: #ffffff;
-  font-family: "JetBrains Mono", monospace;
-}
-body .container main .hire h3 {
-  font-family: "Jersey 10", sans-serif;
-  font-size: 3rem;
-}
-@media (min-width: 375px) and (max-width: 767px) {
-  body .container main .hire h3 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 374px) {
-  body .container main .hire h3 {
-    font-size: 2.5rem;
-  }
-}
-body .container main .hire a {
-  background: #111827;
-  color: #ffffff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-body .container main .hire a i {
-  color: #00ff99;
-}
-body .container main .hire a:hover {
-  transform: scale(1.05);
-  background: #00ff99;
-  color: #0C0C0C;
-}
-body .container main .hire a:hover i {
-  color: #0C0C0C;
 }
 body .container footer {
   background: #111827;
