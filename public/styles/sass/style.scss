@@ -60,9 +60,7 @@ body {
     animation: bg-scrolling-reverse 2s linear infinite;
 
     .container {
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        box-shadow: variables.$custom-shadow;
+        background-color: variables.$custom-black;
 
         @include mixins.mobile-md {
             backdrop-filter: blur(1px);

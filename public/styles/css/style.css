@@ -53,9 +53,7 @@ body {
   animation: bg-scrolling-reverse 2s linear infinite;
 }
 body .container {
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
+  background-color: #0C0C0C;
 }
 @media (min-width: 375px) and (max-width: 767px) {
   body .container {
