@@ -57,6 +57,18 @@ body .container {
   -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
 }
+@media (min-width: 375px) and (max-width: 767px) {
+  body .container {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}
+@media (max-width: 374px) {
+  body .container {
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+  }
+}
 body .container header nav {
   background: #111827;
 }

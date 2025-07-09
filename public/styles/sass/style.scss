@@ -64,6 +64,16 @@ body {
         -webkit-backdrop-filter: blur(4px);
         box-shadow: variables.$custom-shadow;
 
+        @include mixins.mobile-md {
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+
+        @include mixins.mobile-sm {
+            backdrop-filter: blur(1.5px);
+            -webkit-backdrop-filter: blur(1.5px);
+        }
+
         header {
             nav {
                 background: variables.$custom-blue;
