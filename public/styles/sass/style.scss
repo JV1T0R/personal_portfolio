@@ -59,17 +59,40 @@ body {
     background-attachment: fixed;
     animation: bg-scrolling-reverse 2s linear infinite;
 
+    @include mixins.tablet {
+        background-image: none;
+        animation: none;
+    }
+
+    @include mixins.mobile-md {
+        background-image: none;
+        animation: none;
+    }
+
+    @include mixins.mobile-sm {
+        background-image: none;
+        animation: none;
+    }
+
     .container {
         background-color: variables.$custom-black;
 
+        @include mixins.tablet {
+            width: 100dvw;
+            max-width: 100dvw;
+            min-height: 100dvh;           
+        }
+
         @include mixins.mobile-md {
-            backdrop-filter: blur(1px);
-            -webkit-backdrop-filter: blur(1px);
+            width: 100dvw;
+            max-width: 100dvw;
+            min-height: 100dvh;  
         }
 
         @include mixins.mobile-sm {
-            backdrop-filter: blur(1px);
-            -webkit-backdrop-filter: blur(1px);
+            width: 100dvw;
+            max-width: 100dvw;
+            min-height: 100dvh;           
         }
 
         header {
