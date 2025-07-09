@@ -65,13 +65,13 @@ body {
         box-shadow: variables.$custom-shadow;
 
         @include mixins.mobile-md {
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
         }
 
         @include mixins.mobile-sm {
-            backdrop-filter: blur(1.5px);
-            -webkit-backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
         }
 
         header {

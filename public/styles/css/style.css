@@ -59,14 +59,14 @@ body .container {
 }
 @media (min-width: 375px) and (max-width: 767px) {
   body .container {
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
   }
 }
 @media (max-width: 374px) {
   body .container {
-    backdrop-filter: blur(1.5px);
-    -webkit-backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
   }
 }
 body .container header nav {
