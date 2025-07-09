@@ -10,7 +10,7 @@
 /* Google Fonts (Font: Jersey + JetBrains Mono) */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-/* Custom Classes */
+/* Global Classes */
 .tooltip-custom {
     --bs-tooltip-bg: rgba(17, 24, 39, 0.9);
     --bs-tooltip-color: #ffffff;
@@ -29,19 +29,6 @@
     transform: translateX(0);
 }
 
-/* Animations */
-@keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 50px 50px;
-    }
-}
-
-@keyframes bg-scrolling {
-    0% {
-        background-position: 50px 50px;
-    }
-}
-
 /* Base Styles */
 * {
     margin: 0;
@@ -58,6 +45,18 @@ body {
     background-size: 50px 50px;
     background-attachment: fixed;
     animation: bg-scrolling-reverse 2s linear infinite;
+
+    @keyframes bg-scrolling-reverse {
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+
+    @keyframes bg-scrolling {
+        0% {
+            background-position: 50px 50px;
+        }
+    }
 
     @include mixins.tablet {
         background-image: none;
@@ -80,19 +79,19 @@ body {
         @include mixins.tablet {
             width: 100dvw;
             max-width: 100dvw;
-            min-height: 100dvh;           
+            min-height: 100dvh;
         }
 
         @include mixins.mobile-md {
             width: 100dvw;
             max-width: 100dvw;
-            min-height: 100dvh;  
+            min-height: 100dvh;
         }
 
         @include mixins.mobile-sm {
             width: 100dvw;
             max-width: 100dvw;
-            min-height: 100dvh;           
+            min-height: 100dvh;
         }
 
         header {

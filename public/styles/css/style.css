@@ -7,7 +7,7 @@
 /* Fonts */
 /* Colors */
 /* Shadows */
-/* Custom Classes */
+/* Global Classes */
 .tooltip-custom {
   --bs-tooltip-bg: rgba(17, 24, 39, 0.9);
   --bs-tooltip-color: #ffffff;
@@ -26,17 +26,6 @@
   transform: translateX(0);
 }
 
-/* Animations */
-@keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
 /* Base Styles */
 * {
   margin: 0;
@@ -51,6 +40,16 @@ body {
   background-size: 50px 50px;
   background-attachment: fixed;
   animation: bg-scrolling-reverse 2s linear infinite;
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
