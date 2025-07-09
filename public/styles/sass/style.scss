@@ -57,10 +57,12 @@ body {
         linear-gradient(90deg, rgba(0, 255, 153, 0.20) 0.6px, transparent 0.6px);
     background-size: 50px 50px;
     background-attachment: fixed;
-    animation: bg-scrolling-reverse 1.5s linear infinite;
+    animation: bg-scrolling-reverse 2s linear infinite;
 
     .container {
-        background: variables.$custom-black;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        box-shadow: variables.$custom-shadow;
 
         header {
             nav {
