@@ -130,7 +130,9 @@ body {
                             height: 35px;
                         }
 
-                        &:hover {
+                        &:hover, 
+                        &:active,
+                        &:focus {
                             transform: scale(1.15);
                             background: variables.$custom-green;
                         }
@@ -286,7 +288,7 @@ body {
                     }
                 }
 
-                a {
+                .btn {
                     background: variables.$standard-white;
                     color: variables.$custom-black;
                     font-family: variables.$font-family-secondary;
@@ -302,7 +304,8 @@ body {
                     }
 
                     &:hover,
-                    &:active {
+                    &:active,
+                    &:focus {
                         background-color: variables.$custom-green;
                         transform: scale(1.05);
                     }
@@ -394,6 +397,30 @@ body {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .modal {
+            .btn {
+                background: variables.$custom-green;
+                color: variables.$custom-black;
+                font-family: variables.$font-family-secondary;
+                padding: 0.5rem 1rem;
+                padding-left: 3rem;
+                transition: 0.2s ease-in-out;
+
+                i {
+                    top: 50%;
+                    left: 1rem;
+                    transform: translateY(-50%);
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background: variables.$standard-white;
+                    border: 1px solid variables.$custom-green;
                 }
             }
         }

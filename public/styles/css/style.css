@@ -128,7 +128,7 @@ body .container header nav ul a {
     height: 35px;
   }
 }
-body .container header nav ul a:hover {
+body .container header nav ul a:hover, body .container header nav ul a:active, body .container header nav ul a:focus {
   transform: scale(1.15);
   background: #00ff99;
 }
@@ -268,7 +268,7 @@ body .container main .hire h3 {
     font-size: 2.5rem;
   }
 }
-body .container main .hire a {
+body .container main .hire .btn {
   background: #ffffff;
   color: #0C0C0C;
   font-family: "JetBrains Mono", monospace;
@@ -277,12 +277,12 @@ body .container main .hire a {
   padding-left: 3rem;
   transition: 0.2s ease-in-out;
 }
-body .container main .hire a i {
+body .container main .hire .btn i {
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
 }
-body .container main .hire a:hover, body .container main .hire a:active {
+body .container main .hire .btn:hover, body .container main .hire .btn:active, body .container main .hire .btn:focus {
   background-color: #00ff99;
   transform: scale(1.05);
 }
@@ -355,6 +355,23 @@ body .container main .projects .window .window-body .project:nth-child(5) {
 body .container main .projects .window .window-body .project .project-title,
 body .container main .projects .window .window-body .project a {
   color: #00ff99;
+}
+body .container .modal .btn {
+  background: #00ff99;
+  color: #0C0C0C;
+  font-family: "JetBrains Mono", monospace;
+  padding: 0.5rem 1rem;
+  padding-left: 3rem;
+  transition: 0.2s ease-in-out;
+}
+body .container .modal .btn i {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+body .container .modal .btn:hover, body .container .modal .btn:active, body .container .modal .btn:focus {
+  background: #ffffff;
+  border: 1px solid #00ff99;
 }
 body .container footer {
   background: #111827;

@@ -47,9 +47,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="mailto: jvticontato@gmail.com"
+                         <a href="#" target="_blank" rel="noopener noreferrer" data-bs-toggle="modal"
+                            data-bs-target="#cvModal" 
                             class="d-flex justify-content-center align-items-center position-relative rounded-circle">
-                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <i class="bi bi-file-earmark-person-fill fs-5"></i>
                         </a>
                     </li>
                 </ul>
@@ -242,22 +243,16 @@
 
                 <div
                     class="d-flex flex-column flex-lg-row gap-3 gap-lg-5 justify-content-center align-items-center mb-3">
-                    <a href="https://wa.me/557199830256?text=Ol%C3%A1%2C%20Jo%C3%A3o!" target="_blank"
-                        rel="noopener noreferrer" class="btn position-relative fw-bold">
-                        <i class="bi bi-whatsapp position-absolute"></i>
-                        (71) 9983-0256
-                    </a>
-
                     <a href="mailto:jvticontato@gmail.com" target="_blank" rel="noopener noreferrer"
                         class="btn position-relative fw-bold">
                         <i class="bi bi-envelope-fill position-absolute"></i>
                         jvticontato@gmail.com
                     </a>
 
-                    <a href="assets/documents/cv-pt.pdf" target="_blank" rel="noopener noreferrer"
-                        class="btn position-relative fw-bold">
-                        <i class="bi bi-download position-absolute"></i>
-                        Curriculum Vitae
+                    <a href="https://wa.me/557199830256?text=Ol%C3%A1%2C%20Jo%C3%A3o!" target="_blank"
+                        rel="noopener noreferrer" class="btn position-relative fw-bold">
+                        <i class="bi bi-whatsapp position-absolute"></i>
+                        (71) 9983-0256
                     </a>
                 </div>
             </section>
@@ -377,6 +372,36 @@
                 </div>
             </section>
         </main>
+
+        <!-- CV Modal -->
+        <div id="cvModal" class="modal fade" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true"
+            role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2 id="cvModalLabel" class="modal-title h5 text-danger">
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                            Aviso
+                        </h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close modal"></button>
+                    </header>
+
+                    <div class="modal-body justify-content-center">
+                        <p>
+                            Obrigado pelo interesse! Por favor, note que meus dados pessoais são destinados
+                            exclusivamente a
+                            oportunidades profissionais.
+                        </p>
+                        <a href="assets/documents/cv-pt.pdf" target="_blank" rel="noopener noreferrer"
+                            class="btn position-relative p-2 w-100">
+                            <i class="bi bi-download position-absolute fw-bold"></i>
+                            Visualizar Currículo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer class="d-flex justify-content-center align-items-center text-center mt-4 p-3 rounded-top-3">
             <p class="m-0 p-0">&copy; João Vítor Pamponet Esteves. Todos os direitos reservados.</p>
